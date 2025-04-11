@@ -7,3 +7,5 @@ Originaly this was just an idea floating in my head, but then i got an oportunit
 
 The tank is made of 2 main part: The head & The body, each one functioning on their own using seperate arduinos to enable parralel motor movement.
 The body is made of 6 wheels, out of them only two are connected to stepper motors. 
+
+to be continued...
