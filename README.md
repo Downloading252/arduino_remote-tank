@@ -1,6 +1,6 @@
 # arduino_remote-tank
-This project was a school project of mine. this project utilizes the simple to work with Arduino family, Uno and Mega2560 to be exact together with RF communication using the HC-12 modules.
-The cancept of the project was a tank capabale of auto brake when getting to close to an object, as to be an example of a breaking system capable of preventing accidents.
+This project was a school project of mine. this project utilizes the simple to work with Arduino family, Uno and Mega2560 to be exact together with RF communication using the HC-12 modules.   
+The concept of the project was a tank capabale of auto brake when getting to close to an object, as to be an example of a breaking system capable of preventing accidents.   
 The tank was originaly designed to look as if it was made out of plates, with the vision being the finale product looking lie a steampunk machine.
 
 The tank itself is made out of 3 parts:
