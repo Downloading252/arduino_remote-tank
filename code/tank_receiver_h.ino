@@ -20,16 +20,16 @@ bool isHigh6 = false;
 bool isHigh7 = false;
 
 void setup() {
-  Serial.begin(9600); // Serial monitor
+  Serial.begin(9600);
   HC12.begin(9600);   // HC-12 serial communication
-  delay(100);         // Allow HC-12 to initialize
+  delay(500);         // Allow HC-12 to initialize
 
   pinMode(12, OUTPUT);     // SET pin
   digitalWrite(12, LOW);
 
-  HC12.print("AT+FU3");    // Set module to FU3 mode (default mode)
+  HC12.print("AT+FU3");
   delay(100);
-  HC12.print("AT+C0A00");  // Set frequency to 433.4 MHz (400+04)
+  HC12.print("AT+C001"); // example channel 01 (433.5 MHz)
   delay(100);
   HC12.print("AT+SAVE");   // Save the configuration
   delay(100);
@@ -41,7 +41,6 @@ void setup() {
 
   pinMode(ServoPin, OUTPUT);
   Servo.attach(ServoPin);
-  Serial.println("Setup complete");
   Servo.write(MapServoPos);
 
   myStepper.setSpeed(60);
@@ -93,4 +92,5 @@ void loop() {
     digitalWrite(6, LOW);
     isHigh7 = false;
   }
+  delay(10);
 }
