@@ -10,9 +10,12 @@ The tank itself is made out of 3 parts:
    * **Communication**: An HC-12 RF transreceiver module communicating at 437.4MHz.
    * **Microcontroller**: Arduino Mega2560.
    * **Power Supple**: A 9v battery connected directly to the Arduino.
+     
+    The Arduino Mega was chosen because of it's additional GPIO pins, as each notor driver requires 4 pins to operate, together with the ultrasonic sensor and the HC-12 module the amount of GPIO pins in a regular arduino wasn't enough.  
+    The 9v Battery powers the Arduino which power the motos and the drivers.
    
-     The Arduino Mega was chosen because of it's additional GPIO pins, as each notor driver requires 4 pins to operate, together with the ultrasonic sensor and the HC-12 module the amount of GPIO pins in a regular arduino wasn't enough.
-2. The Upper Part - **The Turret**:
+   
+3. The Upper Part - **The Turret**:
    * **Rotation**: A 28BYJ-48 stepper motor with a ULM2003 driver for 360 degrees rotational movement.
    * **Elevation**: Am MG90S servo motor fot vertical aiminig.
    * **Shooting**: Flywheel system using 4x DC motors to launch plastic cylinders.
